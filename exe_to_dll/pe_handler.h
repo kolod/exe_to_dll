@@ -1,6 +1,6 @@
 #pragma once
 
-#include "peconv.h"
+#include <peconv.h>
 
 class PeHandler
 {
@@ -32,13 +32,12 @@ public:
 
     bool exeToDllPatch();
     bool savePe(const char *path);
-
 protected:
-    BYTE * getCavePtr(size_t neededSize);
 
     size_t v_size;
     BYTE *pe_ptr;
 
     bool is64bit;
     DWORD ep;
+
 };

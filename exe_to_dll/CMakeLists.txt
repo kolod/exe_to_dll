@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 3.0)
 
 project ( exe_to_dll )
 
@@ -14,6 +14,7 @@ set (srcs
 # general headers - they will be used for both EXE and DLL:
 set (hdrs
 	pe_handler.h
+	exports_block.h
 )
 
 set (rsrc
